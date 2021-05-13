@@ -5,6 +5,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--stolen from stack overflow-->
 </head>
 <body>
+<button onclick="">Execute JavaScript code (Destroy RLM)</button>
+<br>
 <div class="output"></div>
     <script language="javascript">
         var realConsoleLog = console.log;
@@ -13,7 +15,6 @@
             $(".output").text(message);
             realConsoleLog.apply(console, arguments);
         };
-        console.log("Test");
     </script>
 </body>
 </html>
